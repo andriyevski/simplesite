@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="content">
+            <p>{% for bb in bbs %}</p>
+            <h3 id="product-buy--delivery-policy">{{ bb.title }}</h3>
+            <p>{{ bb.content }}</p>
+            <h3 id="product-buy--delivery-policy-1">{{ bb.published|date:"d.m.Y H:i:s" }}</h3>
+            {% endfor %}  
+          </div>
+    </body>
+</html>
